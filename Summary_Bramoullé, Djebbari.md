@@ -1,6 +1,4 @@
-# Networks-project - Piotr
-
-## Peer Effects in Networks: A Survey - Bramoullé, Djebbari
+# Peer Effects in Networks: A Survey - Bramoullé, Djebbari
 
 ### Identification of peer effects through networks
 
