@@ -20,9 +20,23 @@ d_i=∣N_i∣: number of peers
 
 γ: own-characteristic effect 
 
-δ: contextual peer effect
+δ: contextual peer effect: my outcome changes bc peers have certain characteristics
 
-β: endogenous peer effect 
+β: endogenous peer effect: my outcome changes bc my pees' outcomes change.
+
+But note that the peers' outcomes and my own outcomes are jointly determined.
+
+*Main Identification Assumptions*
+1. Exogeneity of characteristics and the network
+
+$E(ε_i∣x,G)=0$ 
+i.e. 
+- no omitted variables correlated with both outcomes and peer structure
+- no endogenous friendship formation affecting the error term
+- no common shocks left in the residual that line up with the network
+
+2. No isolated individuals: every individual has at least 1 peer
+3. Non-degenerate parameter condition $\delta + \gamma \beta \neq 0$
 
 
 ## Section 3 — Correlated effects and networks
