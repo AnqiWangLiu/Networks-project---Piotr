@@ -1,18 +1,18 @@
 # Networks-project - Piotr
 
-## Peer Effects in Networks: A Survey - Bramoullé, Djebbari**
+## Peer Effects in Networks: A Survey - Bramoullé, Djebbari
 *Identification of peer effects through networks*\\
-*If correlated effects have already been solved, can we still separately identify peer effects despite simultaneity?* i.e. if the observed characteristics and the network are exogeneous rel. to the outcome. $E(ε_i ∣ x,G)=0$.
-Baseline model: 
+*If correlated effects have already been solved, can we still separately identify peer effects despite simultaneity?* i.e. if the observed characteristics and the network are exogeneous rel. to the outcome. $E(ε_i ∣ x,G)=0$.\\
+Baseline model: \\
 $y_i = \alpha + \gamma x_i + \delta \frac{1}{d_i} \sum_{j \in N_i} x_j + \beta \frac{1}{d_i} \sum_{j \in N_i} y_j + \varepsilon_i$
-where: 
-y_i: individual i’s outcome
-x_i: individual i’s observed characteristic
-N_i: i’s peers
-d_i=∣N_i∣: number of peers
-γ: own-characteristic effect
-δ: contextual peer effect
-β: endogenous peer effect
+where: \\
+y_i: individual i’s outcome\\
+x_i: individual i’s observed characteristic\\
+N_i: i’s peers\\
+d_i=∣N_i∣: number of peers \\
+γ: own-characteristic effect \\
+δ: contextual peer effect \\
+β: endogenous peer effect \\
 
 
 ## Section 3 — Correlated effects and networks
