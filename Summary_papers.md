@@ -1,7 +1,7 @@
 # Networks-project - Piotr
 
-**Peer Effects in Networks: A Survey - Bramoullé, Djebbari**
-*Identification of peer effects through networks*
+## Peer Effects in Networks: A Survey - Bramoullé, Djebbari**
+*Identification of peer effects through networks*\\
 *If correlated effects have already been solved, can we still separately identify peer effects despite simultaneity?* i.e. if the observed characteristics and the network are exogeneous rel. to the outcome. $E(ε_i ∣ x,G)=0$.
 
 
