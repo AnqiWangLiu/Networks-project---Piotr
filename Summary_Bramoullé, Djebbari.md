@@ -25,6 +25,8 @@ d_i=∣N_i∣: number of peers
 
 But note that the peers' outcomes and my own outcomes are jointly determined.
 
+---
+
 *Main Identification Assumptions*
 1. Exogeneity of characteristics and the network
 
@@ -44,6 +46,9 @@ i.e.
 - peer effects
 - peer-of-peer effects
 
+   
+---
+
 *Identification strategy*
 
 In a network, a peer's peer who is not my peer can move my peer's outcome w/o moving mine.
@@ -62,6 +67,8 @@ The theorem intuitively:
 - with group fixed effects, model (2) is identified iff $I$, $G$, $G^2$, and $G^3$ are linearly independent
   
 If these matrices are too similar, the model cannot separate the different channels.
+
+---
 
 *Reduced-form intuition*
 
@@ -137,6 +144,8 @@ That approach relies on assuming that:
 
 do **not** vary with group size.
 
+---
+
 **Another strategy: Ientification through assumptions on the error terms**
 
 Instead of using excluded network variables, impose assumptions on the residuals, such as uncorrelated errors. Then covariance restrictions can help identify peer effects.
@@ -164,6 +173,8 @@ Thus:
 - identifying the regression is not the same as identifying preferences
 - identifying peer effects is not the same as identifying welfare effects
 
+---
+
 *Summary: Main strategy*
 
 1. write the peer-effects model on the network
@@ -173,6 +184,8 @@ Thus:
 5. this separates:
    - contextual peer effects ($\delta$)
    - endogenous peer effects ($\beta$)
+
+---
 
 ### Correlated effects and networks
 How to identify peer effects when **networks may be endogenous and unobserved characteristics may be correlated across connected individuals**. 
@@ -196,13 +209,17 @@ The paper also mentions related approaches that do not fully model network forma
 
 Panel data can help by introducing **individual fixed effects**, which absorb time-invariant unobserved heterogeneity. That should mitigate correlated effects. But the authors emphasize that this area is still **surprisingly underdeveloped** in network peer-effects research. Once the model is dynamic, complications multiply: the network may change over time, peer effects may be lagged, and peers’ time-invariant unobservables may still matter. 
 
+---
+
 ### Imperfect knowledge of the network
 
 In this section, we relax: that the relevant network is perfectly observed. The authors argue that this is often unrealistic because of **sampling, measurement error, and uncertainty about which network is actually relevant** for a given outcome. This matters because the identification strategy above relies on correct exclusion restrictions. If the observed network misses real ties, then a supposed “peer of a peer who is not a peer” may actually be a direct peer, making the instrument invalid. 
 
 The paper reviews several responses. One is to combine **multiple network dimensions** so that the excluded nodes are more likely that are not direct contacts, such as combining family and neighborhood networks. This makes the peers-of-peers instrument more credible because the indirect contact is less likely to also affect the person directly. Another is a growing theoretical literature showing that peer effects may still be identified with **very imperfect network information**, and in some panel cases even with no direct network data if the network is time-invariant. There is also work on cross-sectional estimation when the researcher can recover the probability distribution of the network rather than the network itself.
 
-Major unsolved issues: **network sampling and measurement error**. Sampled networks can invalidate standard friends-of-friends instruments, and degree censoring can substantially bias estimates. 
+Major unsolved issues: **network sampling and measurement error**. Sampled networks can invalidate standard friends-of-friends instruments, and degree censoring can substantially bias estimates.
+
+---
 
 ### Summary: Comparison and evaluation of the techniques and methodologies
 
@@ -253,6 +270,8 @@ Fixed effects can remove stable omitted variables. The paper sees them as promis
 Frontier methods. Its strength is realism: it acknowledges that network data are often incomplete or wrong. The paper is cautiously optimistic, but also clear that many standard instruments break under sampling and measurement error.
 
 **Best when:** the network is noisy, incomplete, or only probabilistically observed.
+
+---
 
 ### Bottom-line evaluation
 
