@@ -1,1 +1,51 @@
-# Randomization tests of causal effects under interference
+# Randomization Tests of Causal Effects Under Interference
+## Motivation
+
+Classical causal inference often assumes **no interference**: the treatment assigned to one unit does not affect another unit’s outcome. This is known as the Stable Unit Treatment Value Assumption, or SUTVA.
+
+However, many real experiments violate this assumption.
+
+Examples include:
+
+- students in the same household,
+- people in the same social network,
+- firms in the same market,
+- individuals exposed to peer effects.
+
+In these settings, a unit’s outcome may depend not only on its own treatment status, but also on the treatment status of nearby or related units.
+
+This creates a problem for standard Fisher randomization tests. Under no interference, the sharp null hypothesis of no treatment effect lets us impute all missing potential outcomes. Under interference, many hypotheses are no longer sharp, because changing one unit’s assignment can also change other units’ exposure conditions.
+
+The paper develops a framework for valid randomization tests under interference by introducing **conditioning mechanisms**.
+
+---
+
+## Core Idea
+
+The key challenge is:
+
+> How can we run a valid randomization test when the null hypothesis does not determine every missing potential outcome?
+
+The solution is to condition the randomization test on carefully chosen information so that, within the conditioned set, the test statistic becomes imputable.
+
+In other words, the method restricts attention to:
+
+1. a subset of units, called **focal units**, and
+2. a subset of treatment assignments,
+
+such that the null hypothesis is sharp for the outcomes used in the test.
+
+This allows the analyst to simulate the correct null distribution even when interference is present.
+
+---
+
+## Key Concepts
+
+### Interference
+
+Interference occurs when one unit’s treatment assignment can affect another unit’s outcome.
+
+Instead of writing a unit’s potential outcome as:
+
+```text
+Y_i(Z_i)
